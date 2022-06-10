@@ -1,0 +1,51 @@
+\documentclass[12pt,titlepage]{report}
+\usepackage{Preamble}
+
+\begin{document}
+
+\begin{titlepage}
+    \newgeometry{margin=3cm}
+	\centering
+    \includegraphics[width=0.5\linewidth]{epfl.png}\\[0.25cm] 	% University Logo
+    \textsc{\LARGE École Polytechnique Fédérale de Lausanne}\\ \vspace{\fill}
+    \textbf{\textsc{\fontsize{40}{40}\selectfont Semester Project}}\\
+    \vspace{1cm}	
+    \textbf{\textsc{\fontsize{40}{40}\selectfont Report}}\\ \vspace{\fill}		
+	\textsc{\LARGE Automatic vectorization and quantitative analysis of XIXth century maps of Paris}\\[0.4cm]
+	\rule{\linewidth}{0.2 mm} \\[0.5 cm]
+	KANG, Tianqu \\[0.5 cm] \today
+\end{titlepage}
+\restoregeometry
+
+\thispagestyle{numberonly}
+
+% \begin{summary}
+% \section*{Abstract}
+% \lipsum[0]
+% \end{summary}
+
+% \begin{invsummary}
+% Here's another environment for really highlighting bits of information
+
+% \lipsum[2]
+% \end{invsummary}
+
+\chapter{Abstract}
+\subfile{0-Abstract}
+
+\chapter{Introduction}
+\subfile{1-Introduction}
+
+\chapter{Methods, Results and Discussion}
+\subfile{2-Methods}
+% Figure part of the sty file is commented
+
+\chapter{Conclusions and future research}
+\subfile{5-Conclusion}
+
+\printbibliography
+
+\clearpage
+\pagestyle{numberonly}
+
+\end{document}
